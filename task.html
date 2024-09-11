@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        header{
+            background-color: rgb(110, 129, 149);
+            padding: 10px;
+            color: blanchedalmond;
+        }
+        .head{
+            float: right;
+            word-spacing:20px;
+            padding-right: 40px;
+            color: blanchedalmond;
+        }
+        .container{
+            margin-top: 8px;
+            display: flex;
+            flex-direction: row;
+            box-shadow: 4px 5px 5px white;
+        }
+        .one{
+            background-image: linear-gradient(to right,yellow,orange,rgb(197, 65, 65));
+            width: 70%;
+            margin-left: 0;
+        }
+        .two{ 
+            float: right;
+            text-align: left;
+            width: 30%;
+            box-shadow: 5px 5px 5px solid black;
+            background-image: radial-gradient(rgb(114, 114, 131),rgb(107, 61, 107));   
+        }
+        .image-gallery{
+            display: flex;
+            gap: 20px;
+        }
+        .image-box{
+            border: 1px solid black;
+            text-decoration-color:blueviolet ;
+            object-fit: cover;
+        }
+        button{
+            background-color: rgb(32,26,26);
+            color:blanchedalmond;
+            width: 30%;
+        }
+        .submit{
+            width: 100%;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            color: white;
+            background-color: black;
+        }
+        .submit:hover{
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        MYLogo
+        <div class="head">
+            Home
+            About
+            Services
+            Contact
+        </div>
+    </header>
+    <div class="container">
+        <div class="one">
+            <h2>Welcome to my Website</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iusto dolores minima officiis temporibus placeat tenetur hic debitis asperiores aut?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, nostrum.</p>
+            <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/awesome-solitude-bess-hamiti.jpg" width="150px" height="150px">
+
+        </div>
+        <div class="two">
+            <h2>sidebar</h2>
+            <a href="Link1">Link1</a><br>
+            <a href="Link2">Link2</a><br>
+            <a href="Link3">Link3</a>
+
+        </div>
+    </div>
+    <h3>Image Gallery</h3>
+    <div class="image-gallery">
+        <div class="image-box">
+            <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/awesome-solitude-bess-hamiti.jpg" alt="caption1" width="200px" height="200px">
+            <button>Caption 1 </button>
+        </div>
+        <div class="image-box">
+            <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/awesome-solitude-bess-hamiti.jpg" alt="caption2" width="200px" height="200px">
+            <button>caption 2</button>
+        </div>
+        <div class="image-box">
+            <img src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/awesome-solitude-bess-hamiti.jpg" alt="caption2" width="200px" height="200px">
+            <button>caption 2</button>
+        </div>
+    </div>
+    <div class="sign-up">
+        <h2>Sign UP</h2>
+        <form>
+            <label for="Name">Name:</label><br>
+            <input type="Name:" name="" id="" placeholder="name" required style="width:1400px; "><br><br>
+            <label for="email">Email:</label><br>     
+            <input type="email:" name="" id="" placeholder="Email" required style="width:1400px;"><br><br>
+            <input type="checkbox" id="terms" name="terms" value="terms" required >
+
+            
+              <label for="terms">  Accept terms and conditions</label><br><br>
+            
+            <button class="submit" type="submit">submit</button><br><br><br>
+        </form>
+    </div>
+    <footer>
+        <span>@2024 MY website . All rights reserved</span>
+    </footer>
+</body>
+</html>
